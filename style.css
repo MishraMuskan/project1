@@ -8,9 +8,9 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* background: linear-gradient(to right, rgb(199, 163, 5), rgb(201, 24, 148), rgb(196, 15, 15)); */
+    background: radial-gradient(rgb(174, 194, 202),rgba(9, 163, 214, 0.918));
     position: relative;
-    background-color: #000;
+    /* background-color: #000; */
     /* overflow: hidden; */
 }
 
@@ -133,14 +133,27 @@ body {
     font-size: 25px;
     font-weight: 100;
 }
-
+#contaner{
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    overflow-y: auto;
+    position: absolute;
+    top: 30px;
+  
+}
+#contaner::-webkit-scrollbar {
+    display: none;
+}
 #story {
     height: 100px;
     width: 100%;
+   margin-top: -10%;
     background: rgb(255, 255, 255);
     border-bottom: 2px solid rgb(235, 230, 230);
     white-space: nowrap;
     overflow-x: auto;
+
 }
 
 #story::-webkit-scrollbar {
@@ -154,11 +167,14 @@ body {
     background: linear-gradient(to right, rgb(199, 163, 5), rgb(201, 24, 148), rgb(196, 15, 15));
     margin-top: 33px;
     margin-left: 5px;
-  
+    transition: all 0.2 ease-in;
     background-position: top;
     object-fit: cover;
     display: inline-block;
     /* border: 2px solid rgb(133, 21, 90); */
+}
+.a:hover{
+    transform: scale(1.1);
 }
 
 #story1>h4 {
@@ -169,6 +185,7 @@ body {
     margin-left: 3px;
     color: #000;
     /* z-index: 9999; */
+  
 }
 
 .imagee {
@@ -180,23 +197,26 @@ body {
     margin-top: 2px;
     margin-left: 2px;
     overflow: hidden;
+   
+    /* user-select: none; */
 }
+
 
 #story1 img {
     height: 100%;
     width: 100%;
+    
  
 }
+
 
 #box {
     height: 67%;
     width: 100%;
-    overflow-y: auto;
+   
    
 }
-#box::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 #box #menu {
@@ -255,8 +275,12 @@ body {
     font-size: 10px;
 }
 
-
-#post {
+.post-div{
+    margin: 5px 0px ;
+    height: 100%;
+}
+.post {
+    position: relative;
     height: 72%;
     width: 100%;
     overflow: hidden;
@@ -264,11 +288,12 @@ body {
     object-fit: cover;
 }
 
-#post img {
+.post img {
     height: 100%;
     width: 100%;
+
 }
-#post #heart{
+.post .heart{
     height: 10%;
     width: 20%;
     position: absolute;
@@ -276,9 +301,8 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    
 }
-#heart img{
+.heart img{
     height: 100%;
     width: 100%;
 }
@@ -324,10 +348,11 @@ body {
     height: 10%;
     width: 100%;
     background: rgb(255, 255, 255);
-    position: fixed;
+    position: absolute;
+    bottom: 0%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: left; 
     gap: 28px;
 
 }
