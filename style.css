@@ -8,12 +8,9 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: radial-gradient(rgb(174, 194, 202),rgba(9, 163, 214, 0.918));
+    background: radial-gradient(rgb(174, 194, 202), rgba(9, 163, 214, 0.918));
     position: relative;
-    /* background-color: #000; */
-    /* overflow: hidden; */
 }
-
 
 #card {
     height: 70%;
@@ -24,25 +21,21 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* position: fixed; */
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #nav {
     height: 30px;
     width: 100%;
     background: rgb(255, 254, 254);
-    display: flex; 
+    display: flex;
     position: fixed;
     top: 0%;
-   
 }
 
 #left {
     height: 100%;
     width: 50%;
-    
-
 }
 
 #left i {
@@ -80,7 +73,6 @@ body {
     object-fit: cover;
     background-position: top;
     position: absolute;
-    /* overflow: hidden; */
     z-index: 999;
     display: none;
     top: 0%;
@@ -122,7 +114,6 @@ body {
     left: 80%;
     font-size: 25px;
     font-weight: 100;
-
 }
 
 #fs i {
@@ -133,27 +124,29 @@ body {
     font-size: 25px;
     font-weight: 100;
 }
-#contaner{
+
+#contaner {
     height: 100%;
     width: 100%;
     /* background: #000; */
     overflow-y: auto;
     position: absolute;
     top: 30px;
-  
 }
+
 #contaner::-webkit-scrollbar {
     display: none;
 }
+
 #story {
     height: 100px;
     width: 100%;
-   margin-top: -10%;
+    margin-top: -10%;
     background: rgb(255, 255, 255);
     border-bottom: 2px solid rgb(235, 230, 230);
     white-space: nowrap;
     overflow-x: auto;
-
+    overflow-y: hidden;
 }
 
 #story::-webkit-scrollbar {
@@ -173,7 +166,8 @@ body {
     display: inline-block;
     /* border: 2px solid rgb(133, 21, 90); */
 }
-.a:hover{
+
+.a:hover {
     transform: scale(1.1);
 }
 
@@ -181,11 +175,8 @@ body {
     font-size: 10px;
     font-family: cursive;
     font-weight: 400;
-    /* margin-top: 85%; */
     margin-left: 3px;
     color: #000;
-    /* z-index: 9999; */
-  
 }
 
 .imagee {
@@ -197,27 +188,17 @@ body {
     margin-top: 2px;
     margin-left: 2px;
     overflow: hidden;
-   
-    /* user-select: none; */
 }
-
 
 #story1 img {
     height: 100%;
     width: 100%;
-    
- 
 }
-
 
 #box {
     height: 67%;
     width: 100%;
-   
-   
 }
-
-
 
 #box #menu {
     height: 15%;
@@ -275,10 +256,11 @@ body {
     font-size: 10px;
 }
 
-.post-div{
-    margin: 5px 0px ;
+.post-div {
+    margin: 5px 0px;
     height: 100%;
 }
+
 .post {
     position: relative;
     height: 72%;
@@ -291,22 +273,22 @@ body {
 .post img {
     height: 100%;
     width: 100%;
-
 }
-.post .heart{
+
+.post .heart {
     height: 10%;
     width: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: none;
 }
-.heart img{
+
+.heart img {
     height: 100%;
     width: 100%;
 }
-
 
 #likes {
     height: 12%;
@@ -344,7 +326,8 @@ body {
     font-size: 20px;
     padding: 2px 4px;
 }
-#footer{
+
+#footer {
     height: 10%;
     width: 100%;
     background: rgb(255, 255, 255);
@@ -352,27 +335,28 @@ body {
     bottom: 0%;
     display: flex;
     align-items: center;
-    justify-content: left; 
+    justify-content: left;
     gap: 28px;
 
 }
-#footer i{
+
+#footer i {
     font-size: 25px;
-    margin-left:2% ;
-    
+    margin-left: 2%;
+
 }
-#home{
-      height: 80%;
-      width: 12%;
-      background: rgb(255, 255, 255);
-      border-radius: 50%;
-      overflow: hidden;
-      object-fit: cover;
-      background-position: center;
-      /* margin-left: 9%; */
-      /* margin-top: 3px; */
+
+#home {
+    height: 80%;
+    width: 12%;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    background-position: center;
 }
-#home>img{
+
+#home>img {
     height: 100%;
     width: 100%;
 }
